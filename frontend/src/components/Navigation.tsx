@@ -89,7 +89,7 @@ export default function Navigation() {
               className="opacity-90 hover:opacity-100 transition-opacity"
             />
             <span className="text-2xl font-bold text-white font-serif tracking-wide" style={{fontFamily: 'Cinzel, serif'}}>
-              WILD WEST RP
+              DIABLO COUNTY
             </span>
           </Link>
         </div>

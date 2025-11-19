@@ -87,8 +87,8 @@ export default function Home() {
                           textShadow: '3px 3px 0px rgba(0,0,0,0.5)'
                         }}
                       >
-                        DIABLO COUNTY
-                        <span className="block text-red">RP</span>
+                        THE 13th HOUR
+                        <span className="block text-red">SEASON 3</span>
                       </h1>
                       <div className="flex items-center mt-4">
                         <Image

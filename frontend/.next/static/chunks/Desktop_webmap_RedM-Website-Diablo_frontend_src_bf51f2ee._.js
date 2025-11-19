@@ -133,7 +133,7 @@ function Navigation() {
                                     style: {
                                         fontFamily: 'Cinzel, serif'
                                     },
-                                    children: "WILD WEST RP"
+                                    children: "DIABLO COUNTY"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/webmap/RedM-Website-Diablo/frontend/src/components/Navigation.tsx",
                                     lineNumber: 91,
