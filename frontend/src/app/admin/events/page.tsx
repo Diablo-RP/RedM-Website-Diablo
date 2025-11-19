@@ -182,7 +182,7 @@ export default function AdminEventsPage() {
     e.preventDefault();
     
     if (!formData.title.trim() || !formData.description.trim() || !formData.date || !formData.time || !formData.location.trim()) {
-      showNotification('Please fill in all required fields', 'warning');
+      showNotification('Fill in all required fields before the County accepts this event.', 'warning');
       return;
     }
 
@@ -205,7 +205,7 @@ export default function AdminEventsPage() {
       await fetchEvents();
       setShowCreateModal(false);
       resetForm();
-      showNotification('Event created successfully!', 'success');
+      showNotification('Event created and etched into the County ledger.', 'success');
     } catch (error) {
       console.error('Error creating event:', error);
       const errorMessage = error instanceof Error ? error.message : 'Failed to create event';
@@ -235,7 +235,7 @@ export default function AdminEventsPage() {
     if (!editingEvent) return;
 
     if (!formData.title.trim() || !formData.description.trim() || !formData.date || !formData.time || !formData.location.trim()) {
-      showNotification('Please fill in all required fields', 'warning');
+      showNotification('Fill in all required fields before the County accepts this event.', 'warning');
       return;
     }
 
@@ -259,7 +259,7 @@ export default function AdminEventsPage() {
       setShowEditModal(false);
       setEditingEvent(null);
       resetForm();
-      showNotification('Event updated successfully!', 'success');
+      showNotification('Event updated – the ledger has been rewritten.', 'success');
     } catch (error) {
       console.error('Error updating event:', error);
       const errorMessage = error instanceof Error ? error.message : 'Failed to update event';
@@ -268,7 +268,7 @@ export default function AdminEventsPage() {
   };
 
   const handleDeleteEvent = async (eventId: number) => {
-    if (!confirm('Are you sure you want to delete this event? This action cannot be undone and will remove all registrations.')) {
+    if (!confirm('Are you sure you want to delete this event? This cannot be undone and will wipe all sign-ups from the County ledger.')) {
       return;
     }
 
@@ -287,7 +287,7 @@ export default function AdminEventsPage() {
       }
 
       await fetchEvents();
-      showNotification('Event deleted successfully', 'success');
+      showNotification('Event removed from the County ledger.', 'success');
     } catch (error) {
       console.error('Error deleting event:', error);
       const errorMessage = error instanceof Error ? error.message : 'Failed to delete event';
@@ -304,7 +304,7 @@ export default function AdminEventsPage() {
       <div className="min-h-screen" style={{backgroundColor: 'rgb(32, 32, 32)'}}>
         <Navigation />
         <div className="flex items-center justify-center min-h-screen">
-          <div className="text-white text-xl">Access Denied - Super Admin Only</div>
+          <div className="text-white text-xl">Access Denied – High Table (Super Admin) Only</div>
         </div>
       </div>
     );
@@ -397,7 +397,7 @@ export default function AdminEventsPage() {
                  backgroundRepeat: 'no-repeat',
                  minHeight: '120px'
                }}>
-              Create and manage community events for the Wild West frontier.
+              Forge and oversee the County’s stories – from bloody heists and posse hunts to Witching Hour rituals and quiet community gatherings.
             </p>
           </motion.div>
 
@@ -436,14 +436,14 @@ export default function AdminEventsPage() {
               textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
               fontFamily: 'Cinzel, serif'
             }}>
-              ALL EVENTS ({events.length})
+              COUNTY EVENTS ({events.length})
             </h2>
             
             {events.length === 0 ? (
               <div className="text-center py-12">
                 <Calendar className="mx-auto mb-4 text-white opacity-50" size={64} />
                 <p className="text-white text-xl opacity-75">
-                  No events created yet. Create your first event!
+                  No tales have been scheduled yet. Start the first story.
                 </p>
               </div>
             ) : (
@@ -601,7 +601,7 @@ export default function AdminEventsPage() {
                       value={formData.title}
                       onChange={(e) => setFormData({...formData, title: e.target.value})}
                       className="w-full p-3 bg-black/50 border-2 border-white text-white placeholder-gray-300 focus:border-red-600 focus:outline-none font-medium"
-                      placeholder="Enter event title"
+                      placeholder="Name this tale in the ledger"
                       style={{fontFamily: 'Cinzel, serif'}}
                       required
                     />
@@ -720,7 +720,7 @@ export default function AdminEventsPage() {
                         value={formData.location}
                         onChange={(e) => setFormData({...formData, location: e.target.value})}
                         className="w-full p-3 bg-black/50 border-2 border-white text-white placeholder-gray-300 focus:border-red-600 focus:outline-none font-medium"
-                        placeholder="Event location"
+                        placeholder="Where in the County?"
                         style={{fontFamily: 'Cinzel, serif'}}
                         required
                       />

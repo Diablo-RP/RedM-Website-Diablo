@@ -303,7 +303,7 @@ export default function EventsPage() {
                  backgroundRepeat: 'no-repeat',
                  minHeight: '120px'
                }}>
-              Join fellow outlaws, lawmen, and settlers in epic community events across the Wild West frontier.
+              Ride with fellow outlaws, lawmen, witches, hunters and drifters in scheduled stories that shape Diablo County, from bloody heists to eerie midnight gatherings.
             </p>
           </motion.div>
 

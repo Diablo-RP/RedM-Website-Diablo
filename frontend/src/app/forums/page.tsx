@@ -549,7 +549,7 @@ export default function ForumsPage() {
               textShadow: '3px 3px 0px rgba(0,0,0,0.5)',
               fontFamily: 'Cinzel, serif'
             }}>
-              FRONTIER FORUMS
+              DIABLO COUNTY FORUMS
             </h1>
             <div className="flex justify-center mb-6">
               <Image

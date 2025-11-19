@@ -15,11 +15,11 @@ export default function LoadingScreen({ onLoadingComplete }: LoadingScreenProps)
   const [currentMessage, setCurrentMessage] = useState(0);
 
   const loadingMessages = [
-    "Loading the Wild West...",
-    "Preparing your horse...",
-    "Checking your weapons...",
-    "Finding the nearest saloon...",
-    "Ready to ride, partner!"
+    'Attuning to The 13th Hour…',
+    'Letting the County remember your name…',
+    'Sharpening stakes, checking sigils…',
+    'Balancing law, outlaw and what hides between…',
+    'Diablo County is ready. Step through.'
   ];
 
   useEffect(() => {
@@ -176,7 +176,7 @@ export default function LoadingScreen({ onLoadingComplete }: LoadingScreenProps)
                   }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  WILD WEST
+                  DIABLO COUNTY
                 </motion.h1>
                 
                 <div className="flex justify-center mb-4">
@@ -190,7 +190,7 @@ export default function LoadingScreen({ onLoadingComplete }: LoadingScreenProps)
                 </div>
                 
                 <h2 className="text-2xl lg:text-3xl text-white font-serif font-bold tracking-wider" style={{fontFamily: 'Cinzel, serif'}}>
-                  FRONTIER SERVER
+                  THE 13TH HOUR
                 </h2>
               </motion.div>
 
@@ -287,7 +287,7 @@ export default function LoadingScreen({ onLoadingComplete }: LoadingScreenProps)
                         fontFamily: 'Cinzel, serif'
                       }}
                     >
-                      CLICK TO ENTER THE FRONTIER
+                      CLICK TO ENTER THE COUNTY
                     </motion.button>
                     
                     {/* Role icons */}
@@ -322,7 +322,7 @@ export default function LoadingScreen({ onLoadingComplete }: LoadingScreenProps)
               className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white/80 text-sm font-serif italic text-center"
               style={{fontFamily: 'Cinzel, serif'}}
             >
-              "Honor Among Thieves, Law in the Land"
+              "Where the frontier ends… and the unknown begins."
             </motion.div>
           </motion.div>
         </motion.div>

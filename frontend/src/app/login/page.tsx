@@ -87,7 +87,7 @@ export default function LoginPage() {
               />
             </div>
             <p className="text-white text-lg font-medium">
-              Welcome back to the frontier, partner
+              Welcome back to the 13th hour, partner
             </p>
           </motion.div>
 

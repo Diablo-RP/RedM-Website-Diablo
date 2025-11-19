@@ -15,46 +15,46 @@ export default function Home() {
     {
       icon: Star,
       title: 'Authentic Roleplay',
-      description: 'Immerse yourself in the authentic Wild West experience with dedicated roleplay mechanics.',
+      description: 'Grounded, character-driven stories with scars, secrets, and real consequences. The County remembers what you do.',
       image: '/assets/mp_roles_bounty_hunter.png'
     },
     {
       icon: Award,
       title: 'Dynamic Events',
-      description: 'Join community-driven events including train robberies, cattle drives, and town festivals.',
+      description: 'From train jobs and posse hunts to 13th Hour rituals and town showdowns, events that reshape the frontier.',
       image: '/assets/fme_king_of_the_rail.png'
     },
     {
       icon: Users,
       title: 'Active Community',
-      description: 'Connect with fellow outlaws, lawmen, and settlers in our thriving community.',
+      description: 'Outlaws, lawmen, witches, hunters and drifters – a tight-knit Aussie-led community that lives in and out of the County.',
       image: '/assets/mp_roles_trader.png'
     },
     {
       icon: Shield,
       title: 'Fair Governance',
-      description: 'Clear rules and active moderation ensure a fair and enjoyable experience for everyone.',
+      description: 'Clear rules, active staff, and an in-character justice system that keeps the world tense, not toxic.',
       image: '/assets/badges.png'
     }
   ];
 
   const recentUpdates = [
     {
-      title: 'New Moonshiner Role Added',
+      title: 'Moonshiner Role Unleashed',
       date: '2024-01-15',
-      description: 'Players can now become moonshiners with custom distillery mechanics.',
+      description: 'Set up your own backwoods still, craft your shine, and smuggle it past lawmen, hunters, and the things that move when the lanterns go out.',
       image: '/assets/mp_roles_moonshiner.png'
     },
     {
       title: 'Valentine Bank Heist Event',
       date: '2024-01-12',
-      description: 'Epic community event featuring coordinated bank robbery gameplay.',
+      description: 'A County-wide showdown in Valentine – a planned bank job, law response, and consequences that echo long after the smoke clears.',
       image: '/assets/dollar.png'
     },
     {
-      title: 'New Character Customization',
+      title: 'New Character Customisation',
       date: '2024-01-10',
-      description: 'Expanded clothing and accessory options for your character.',
+      description: 'Expanded outfits and details to bring your witch, hunter, lawman or outlaw to life as a true child of Diablo County.',
       image: '/assets/outfit.png'
     }
   ];
@@ -81,11 +81,14 @@ export default function Home() {
                     className="space-y-8"
                   >
                     <div>
-                      <h1 className="text-5xl lg:text-7xl font-bold text-white font-serif leading-tight" style={{
-                        textShadow: '3px 3px 0px rgba(0,0,0,0.5)'
-                      }}>
-                        WILD WEST
-                        <span className="block text-white">FRONTIER</span>
+                      <h1
+                        className="text-5xl lg:text-7xl font-bold text-white font-serif leading-tight"
+                        style={{
+                          textShadow: '3px 3px 0px rgba(0,0,0,0.5)'
+                        }}
+                      >
+                        DIABLO COUNTY
+                        <span className="block text-red">RP</span>
                       </h1>
                       <div className="flex items-center mt-4">
                         <Image
@@ -98,16 +101,17 @@ export default function Home() {
                       </div>
                     </div>
                     
-                    <p className="text-xl text-white leading-relaxed font-medium p-4"
-                       style={{
-                         backgroundImage: 'url("/assets/background_paper.png")',
-                         backgroundSize: '100% 100%',
-                         backgroundPosition: 'center',
-                         backgroundRepeat: 'no-repeat',
-                         minHeight: '120px'
-                       }}>
-                      Step into the untamed frontier where honor among thieves and law in the land 
-                      shape your destiny. Experience authentic Wild West roleplay like never before.
+                    <p
+                      className="text-xl text-white leading-relaxed font-medium p-4"
+                      style={{
+                        backgroundImage: 'url("/assets/background_paper.png")',
+                        backgroundSize: '100% 100%',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                        minHeight: '120px'
+                      }}
+                    >
+                      Step into The 13th Hour: Australia’s longest-running RedM County where the dust of the frontier mixes with whispers of the unknown. Built on a streamer-safe foundation, with a living player economy and custom scripts forged for Diablo County alone, your story isn’t just played… it feeds the County.
                     </p>
                     
                     <div className="flex flex-col sm:flex-row gap-4">
@@ -168,10 +172,13 @@ export default function Home() {
                   viewport={{ once: true }}
                   className="text-center mb-16"
                 >
-                  <h2 className="text-4xl lg:text-5xl font-bold text-white font-serif mb-4" style={{
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
-                  }}>
-                    Why Choose Our Server?
+                  <h2
+                    className="text-4xl lg:text-5xl font-bold text-white font-serif mb-4"
+                    style={{
+                      textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+                    }}
+                  >
+                    Why Ride in Diablo County?
                   </h2>
                   <div className="flex justify-center mb-6">
                     <Image
@@ -183,7 +190,7 @@ export default function Home() {
                     />
                   </div>
                   <p className="text-amber-100 text-lg opacity-90 max-w-2xl mx-auto">
-                    Experience the Wild West like never before with our unique features and dedicated community.
+                    Australia’s longest-running County: strong roots, stranger nights, and stories that don’t reset with every wipe.
                   </p>
                 </motion.div>
 
@@ -239,10 +246,13 @@ export default function Home() {
                   viewport={{ once: true }}
                   className="text-center mb-16"
                 >
-                  <h2 className="text-4xl lg:text-5xl font-bold text-white font-serif mb-4" style={{
-                    textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
-                  }}>
-                    Latest Updates
+                  <h2
+                    className="text-4xl lg:text-5xl font-bold text-white font-serif mb-4"
+                    style={{
+                      textShadow: '2px 2px 4px rgba(0,0,0,0.8)'
+                    }}
+                  >
+                    Latest Whispers from the County
                   </h2>
                   <div className="flex justify-center mb-6">
                     <Image
@@ -307,10 +317,10 @@ export default function Home() {
                   />
                 </div>
                 <p className="text-amber-200 mb-4 font-serif text-lg">
-                  Wild West RP Server
+                  Diablo County RP Server
                 </p>
                 <p className="text-amber-300 opacity-70">
-                  "Honor among thieves, law in the land"
+                  "Where the frontier ends… and the unknown begins."
                 </p>
               </div>
             </footer>
